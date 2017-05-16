@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140C9A34429CBB65F104E130 /* libPods-AppboyTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E60A96A0157057E7AFE35CEF /* libPods-AppboyTest.a */; };
 		95BF252D1EC9A68E00032FD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BF252C1EC9A68E00032FD5 /* main.m */; };
 		95BF25301EC9A68E00032FD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BF252F1EC9A68E00032FD5 /* AppDelegate.m */; };
 		95BF25331EC9A68E00032FD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BF25321EC9A68E00032FD5 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		508AA5FA242DF3C707FB6316 /* Pods-AppboyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppboyTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppboyTest/Pods-AppboyTest.debug.xcconfig"; sourceTree = "<group>"; };
 		95BF25281EC9A68E00032FD5 /* AppboyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppboyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BF252C1EC9A68E00032FD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95BF252E1EC9A68E00032FD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +53,9 @@
 		95BF254C1EC9A68E00032FD5 /* AppboyTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppboyTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BF25501EC9A68E00032FD5 /* AppboyTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppboyTestUITests.m; sourceTree = "<group>"; };
 		95BF25521EC9A68E00032FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95BF255E1ECAF1DD00032FD5 /* AppboyTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppboyTest.entitlements; sourceTree = "<group>"; };
+		E60A96A0157057E7AFE35CEF /* libPods-AppboyTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppboyTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF3F338A5B1FB1DA40395A91 /* Pods-AppboyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppboyTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppboyTest/Pods-AppboyTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140C9A34429CBB65F104E130 /* libPods-AppboyTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DAD7C7A96847EEE74CF79DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				508AA5FA242DF3C707FB6316 /* Pods-AppboyTest.debug.xcconfig */,
+				EF3F338A5B1FB1DA40395A91 /* Pods-AppboyTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		95BF251F1EC9A68E00032FD5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +100,8 @@
 				95BF25441EC9A68E00032FD5 /* AppboyTestTests */,
 				95BF254F1EC9A68E00032FD5 /* AppboyTestUITests */,
 				95BF25291EC9A68E00032FD5 /* Products */,
+				8DAD7C7A96847EEE74CF79DD /* Pods */,
+				B4CDB069317D4745A15590F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +118,7 @@
 		95BF252A1EC9A68E00032FD5 /* AppboyTest */ = {
 			isa = PBXGroup;
 			children = (
+				95BF255E1ECAF1DD00032FD5 /* AppboyTest.entitlements */,
 				95BF252E1EC9A68E00032FD5 /* AppDelegate.h */,
 				95BF252F1EC9A68E00032FD5 /* AppDelegate.m */,
 				95BF25311EC9A68E00032FD5 /* ViewController.h */,
@@ -140,6 +158,14 @@
 			path = AppboyTestUITests;
 			sourceTree = "<group>";
 		};
+		B4CDB069317D4745A15590F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E60A96A0157057E7AFE35CEF /* libPods-AppboyTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95BF25551EC9A68E00032FD5 /* Build configuration list for PBXNativeTarget "AppboyTest" */;
 			buildPhases = (
+				59A34D9B2A57C5E6D8CE5404 /* [CP] Check Pods Manifest.lock */,
 				95BF25241EC9A68E00032FD5 /* Sources */,
 				95BF25251EC9A68E00032FD5 /* Frameworks */,
 				95BF25261EC9A68E00032FD5 /* Resources */,
+				21E557F78085B9C143E919E1 /* [CP] Embed Pods Frameworks */,
+				C5E5D11FDCDBC1F7C512C97E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,7 +236,16 @@
 				TargetAttributes = {
 					95BF25271EC9A68E00032FD5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LLSV39R9YJ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					95BF25401EC9A68E00032FD5 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -267,6 +305,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21E557F78085B9C143E919E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppboyTest/Pods-AppboyTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59A34D9B2A57C5E6D8CE5404 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5E5D11FDCDBC1F7C512C97E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppboyTest/Pods-AppboyTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95BF25241EC9A68E00032FD5 /* Sources */ = {
@@ -422,22 +508,30 @@
 		};
 		95BF25561EC9A68E00032FD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508AA5FA242DF3C707FB6316 /* Pods-AppboyTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppboyTest/AppboyTest.entitlements;
+				DEVELOPMENT_TEAM = LLSV39R9YJ;
 				INFOPLIST_FILE = AppboyTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = anna.AppboyTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.picsart.studio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		95BF25571EC9A68E00032FD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF3F338A5B1FB1DA40395A91 /* Pods-AppboyTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppboyTest/AppboyTest.entitlements;
+				DEVELOPMENT_TEAM = LLSV39R9YJ;
 				INFOPLIST_FILE = AppboyTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = anna.AppboyTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.picsart.studio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -507,6 +601,7 @@
 				95BF25571EC9A68E00032FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95BF25581EC9A68E00032FD5 /* Build configuration list for PBXNativeTarget "AppboyTestTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +610,7 @@
 				95BF255A1EC9A68E00032FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95BF255B1EC9A68E00032FD5 /* Build configuration list for PBXNativeTarget "AppboyTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +619,7 @@
 				95BF255D1EC9A68E00032FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
